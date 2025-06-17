@@ -14,6 +14,10 @@ A Discord on a terminal, simple, made it in like 4.5 hours
 ## Set-Up
 Make sure you installed the requirements already
 
+## Fresh Run
+1. On parent dictionary, run `python main.py`
+   
+## As Path, so you can use it any time without directing to the parent directory (recommended)
 1. Clone this repo to your `C:/Users/[your-name]` as `DisCLI` (I assume you know how)
 2. Go to `Computer`, right shift and click `Property`, go to `Advanced`, and `Click` Environmental Variables
 3. On `System Variables`, choose Path and click `Edit`

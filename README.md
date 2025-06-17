@@ -33,6 +33,14 @@ Make sure you installed the requirements already
 - [ ] React Message
 - [ ] Upload files and images
 - [ ] Notification on Ping
+- [ ] Auto-Refresh for History
+- [ ] Auto-Clean Up for each command usage
+- [ ] Display Names (username) template
+- [ ] Friend Request anyone in a server, or a username
+- [ ] Friend reuest or DM anyone in a server
+- [ ] Display Block/Ignore
+- [ ] Block/Ignore user
+- [ ] Ping User
 ---
 # CAUTION
 You can put your main account token in the `token.txt ` but I am not responsible for any harm, and damage that happen. I need to warn you that self-botting is against Discord TOS. If you insist on doing so, you are feel free to, but remember it is risky. You are feel free to use it within your Discord Bot. Good luck!

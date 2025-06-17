@@ -1,6 +1,7 @@
 # DiscordCLI
 A Discord on a terminal, simple, made it in like 4.5 hours
 ---
+![cmd_HNd7Exh0sF-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4360b209-a935-4b97-b286-e73e5ae4629f)
 ![image](https://github.com/user-attachments/assets/921bff11-c371-4a4e-b31e-ba06350371c7)
 ![image](https://github.com/user-attachments/assets/7180bbb0-4ab1-4f32-8098-4308817186aa)
 
@@ -32,5 +33,9 @@ Make sure you installed the requirements already
 - [ ] React Message
 - [ ] Upload files and images
 - [ ] Notification on Ping
+---
+# CAUTION
+You can put your main account token in the `token.txt ` but I am not responsible for any harm, and damage that happen. I need to warn you that self-botting is against Discord TOS. If you insist on doing so, you are feel free to, but remember it is risky. You are feel free to use it within your Discord Bot. Good luck!
+
 
 [

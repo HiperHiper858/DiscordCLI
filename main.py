@@ -440,7 +440,7 @@ How to Use:
         # DM / Friend Navigation
         elif CS('-cf '):
             # Incase this doesn't make sense as why it is `cf`, so. The friend list in Discord act similarly like channel, so channel but friend... Makes sense right?
-            name = CN
+            name = C[4:] 
             user = discord.utils.find(lambda u: u.name == name, client.users)
             if user:
                 client.current_channel = None

@@ -57,7 +57,22 @@ How to Use:
 - [x] Message timestamp
 - [ ] React Message
 - [x] Upload files and images
+- [ ] React to Message
+- [ ] Ability to change profile picture, bio, banner, and more
+- [ ] Ability to show attached files in a message, and ability to open them up via browser
+- [ ] Better Notifications and Ping (with notification pop-up), with custom ping sound (might use `playsound` module)
+- [ ] More configurable variables
+- [ ] Ability to add Emoji
+- [ ] Snippet within a message (e.g., typing {myutc} will paste your current time within the message)
+- [ ] Ability to Edit message (from an index)
+- [ ] Ability to Copy a message (from an index)
+- [ ] Ability to Join, Leave a server
+- [ ] Markdown view on CMD (using `rich` and some Lexer)
+- [ ] Ability to colorize a text within a message (similar to snippet, reference [Rebane Message Color](https://rebane2001.com/discord-colored-text-generator/)
+- [ ] Improved Chat UI for Blocked/Ignored user, and user that replies to user (marked with lighter background)
+- [ ] Ability to Pin, Bookmark messages
 
+That's it I think.
 # Changelog
     v25.06.17 (yy/mm/dd)
         - Initial release (took 4.5~ hours)

@@ -1,53 +1,86 @@
-# DiscordCLI
-A Discord on a terminal, simple, made it in like 4.5 hours
----
-![cmd_HNd7Exh0sF-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4360b209-a935-4b97-b286-e73e5ae4629f)
-![image](https://github.com/user-attachments/assets/921bff11-c371-4a4e-b31e-ba06350371c7)
-![image](https://github.com/user-attachments/assets/7180bbb0-4ab1-4f32-8098-4308817186aa)
+![image](https://github.com/user-attachments/assets/e072021d-ab9c-4edd-beb6-d38d19f75b51)
 
+# DiscordCLI
+A Discord on a terminal I made within 4 hours, functional (able to reply, message). 
 ---
-# How to Start
-1. Type `-h` to start.
-# Requirements
-`rich prompt_toolkit discord.py asyncio`
+## Thumbnail
+![cmd_lv7piEcLky-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8067db4a-0f02-457f-b6ef-3897aefdb14f)
+---
+## Caution
+You are free to use this as a **selfbot**, although I need to remind you that it **is quite risky and may get your account banned**, since this violates Discord TOS. And **I AM NOT responsible if your account gets banned**.
+Instead, use this on an alternative account, or within your Discord BOT.
+---
+## Requirements
+`rich prompt_toolkit discord.py asyncio shutil tkinter `
 ---
 ## Set-Up
 Make sure you installed the requirements already
+### By Fresh Start
+1. Go run `python main.py`, and do `-h` or `-changelog`
 
-## Fresh Run
-1. On parent dictionary, run `python main.py`
-   
-## As Path, so you can use it any time without directing to the parent directory (recommended)
+### By PATH (recommended, since you dont need to be in parent folder to run this script)
 1. Clone this repo to your `C:/Users/[your-name]` as `DisCLI` (I assume you know how)
 2. Go to `Computer`, right shift and click `Property`, go to `Advanced`, and `Click` Environmental Variables
 3. On `System Variables`, choose Path and click `Edit`
 4. Click `New`, and add this `C:\Users\[your-name]\DisCLI\`
 5. Click `Ok`, and `Ok`, and `Ok`
-6. Enjoy
 ---
-# Changes
+# Command List
+How to Use:
+> -changelog to see changelog
+> -h to see help
+#### Navigation:
+    -s [server]: Pick a server
+    -c [channel]: Pick a channel to Chat (require -s to be triggered)
+    -cf [friend]: Pick a friend to DM
+    -q(uit) or -e(xit): Exit the CLI
+#### Typing
+    -r [message no.] [txt]: Reply to message no with txt
+    -d [messages no.]: Delete messages index, accept list (e.g., -d 1 2 3)
+    -up: Uploads a file, check your window list, there will be an explorer pop up, when you're done, it is saved into upload/, and you can send the file via '-r' or 'say' in which it will deletes after each -r or 'say'
+    -deup: Delete all staged file upload
+    -fw [message no.] [friend/member/dm]: Forward message index to somebody
+    "@": Typing @ will gives a list of member in current channel to be mentioned
+#### Misc
+    -ntf/-notif: Checks notification (within the buffer)
+    -gntf/-gonotif: Go to notification location
+    ->n & -<n: Scroll > (newest) or < (oldest) to n messages
+---
+# Features
 - [x] Replying
 - [x] Sending messages (non-reply)
 - [x] Traverse History
 - [x] Chat on specific channel on a server
 - [x] Chat on friends
-- [ ] Messages forwarding
-- [ ] Delete message
-- [ ] Message timestamp
+- [x] Messages forwarding
+- [x] Delete message
+- [x] Message timestamp
 - [ ] React Message
-- [ ] Upload files and images
-- [ ] Notification on Ping
-- [ ] Auto-Refresh for History
-- [ ] Auto-Clean Up for each command usage
-- [ ] Display Names (username) template
-- [ ] Friend Request anyone in a server, or a username
-- [ ] Friend reuest or DM anyone in a server
-- [ ] Display Block/Ignore
-- [ ] Block/Ignore user
-- [ ] Ping User
----
-# CAUTION
-You can put your main account token in the `token.txt ` but I am not responsible for any harm, and damage that happen. I need to warn you that self-botting is against Discord TOS. If you insist on doing so, you are feel free to, but remember it is risky. You are feel free to use it within your Discord Bot. Good luck!
+- [x] Upload files and images
 
-
-[
+# Changelog
+    v25.06.17 (yy/mm/dd)
+        - Initial release (took 4.5~ hours)
+            a. Working Reply and Sending messages
+            b. Ability to DM or Interact with friends
+            c. Proper Chat UI
+    v25.06.19 (Major Tweaks and Improvement) (took ~9.2 hours)
+        - Improved Chat UI
+            a. Different color for user and other people
+            b. Added timestamp
+            c. Auto-clear for every command trigger
+            d. Long message has horizontal bar
+            e. Reply to message is visible
+            f. Display name and User name shows (tweakable)
+            g. Added more colors
+            h. Color change upon command insert, the input I mean
+        - More commands (check -h)
+            a. -d(elete messages)
+            b. -up(load file)
+            c. -de(stage)up(load file)
+            d. -f(or)w(ard) message
+            e. -n(o)t(i)f
+            f. -g(o to)n(o)t(i)f
+        - Misc
+            a. Minor revamp of code structure
+            b. Added notifications for ping (untested)    

